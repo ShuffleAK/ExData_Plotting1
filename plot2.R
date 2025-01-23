@@ -36,5 +36,9 @@ x_labels_text <- x_labels_text[!is.na(x_labels_text)]
 # Plot the custom x-axis labels
 axis(1, at = x_labels, labels = x_labels_text, las = 1, cex.axis = 1)
 
+dev.copy(png, "plot2.png",
+         width  = 480,
+         height = 480)
 
+dev.off()
 
